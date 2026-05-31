@@ -1,0 +1,58 @@
+{
+  "name": "আপন দুনিয়া",
+  "short_name": "আপন দুনিয়া",
+  "description": "আপন দুনিয়া - ১০০টি বাংলা কবিতার সংকলন। তাসনিমুল হাসান সিয়াম রচিত।",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#6b4c3a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "bn",
+  "dir": "ltr",
+  "categories": ["books", "education", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "সূচিপত্র",
+      "short_name": "সূচি",
+      "description": "কবিতার তালিকা দেখুন",
+      "url": "/?page=1",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "বই সম্পর্কে",
+      "short_name": "সম্পর্কে",
+      "description": "লেখক ও বই সম্পর্কে জানুন",
+      "url": "/?page=about",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
