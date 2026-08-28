@@ -52,7 +52,7 @@ export function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
               <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2011_21_54%20AM-aEb7wlvEsTb5g4czntwK0XOo8ENZtQ.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2011_21_54%20AM%281%29-4TIhICk4GAPDCrp8iVxKU5ud1GbRFf.png"
                   alt="তাসনিমুল হাসান সিয়াম"
                   className="h-full w-full object-cover object-center"
                 />
