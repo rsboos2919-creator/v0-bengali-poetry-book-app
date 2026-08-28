@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import { bookInfo } from '@/lib/poems'
 
 export function AboutPage() {
