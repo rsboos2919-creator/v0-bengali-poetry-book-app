@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useEffect } from 'react'
-import { poems } from '@/lib/poems'
+import { poems, bookInfo } from '@/lib/poems'
 import { useBookmark } from '@/hooks/use-bookmark'
 import { useReadingProgress } from '@/hooks/use-reading-progress'
 import { usePWA } from '@/hooks/use-pwa'
@@ -35,8 +35,8 @@ export default function BookApp() {
   }, [nextPage])
 
   const handleExportPDF = useCallback(async () => {
-    const { generatePDF } = await import('@/lib/pdf-export')
-    await generatePDF()
+    const { exportToPDF } = await import('@/lib/pdf-export')
+    await exportToPDF()
   }, [])
 
   const handleSelectPoem = useCallback((poemIndex: number) => {
@@ -78,17 +78,7 @@ export default function BookApp() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
 
-  // Show loading state
-  if (!isLoaded) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="text-center space-y-4">
-          <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-muted-foreground">লোড হচ্ছে...</p>
-        </div>
-      </div>
-    )
-  }
+
 
   // Render current page
   const renderPage = () => {

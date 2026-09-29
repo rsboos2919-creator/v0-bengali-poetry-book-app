@@ -50,9 +50,12 @@ export function AboutPage() {
               লেখক পরিচিতি
             </h3>
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
-              {/* Author Avatar Placeholder */}
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground text-3xl font-bold flex-shrink-0">
-                ত
+              <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2011_21_54%20AM%281%29-4TIhICk4GAPDCrp8iVxKU5ud1GbRFf.png"
+                  alt="তাসনিমুল হাসান সিয়াম"
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
               <div className="space-y-2 text-center sm:text-left">
                 <p className="text-xl font-semibold text-foreground">
